@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS³",
+  "description": "Plateforme d'orchestration multi-IA (ChatGPT, Gemini, Claude) avec mémoire décisionnelle, bac à sable de preuves et gouvernance humaine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
