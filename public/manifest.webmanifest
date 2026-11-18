@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "NEXUS³ — AI Project Command",
+  "short_name": "NEXUS³",
+  "description": "Orchestrer les projets et vérifier les résultats avec plusieurs agents IA.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080d19",
+  "theme_color": "#080d19",
+  "icons": [
+    {
+      "src": "/nexus-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
