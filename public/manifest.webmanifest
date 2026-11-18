@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "NEXUS³ — Orchestration Multi-IA",
+  "short_name": "NEXUS³",
+  "description": "Orchestration multi-IA avec mémoire, preuves et gouvernance humaine.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080d19",
+  "theme_color": "#080d19",
+  "icons": [
+    {
+      "src": "/nexus-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
