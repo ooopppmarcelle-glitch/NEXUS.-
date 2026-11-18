@@ -12,7 +12,7 @@ The Express server exposes workspace data and mutation endpoints without a user 
 ### 2. Proof execution must not be treated as a secure hostile-code sandbox
 The proof runner uses Node's `vm` module to execute supplied JavaScript after transpilation. Node's documentation explicitly warns that `node:vm` is not a security mechanism. A context timeout is not a substitute for process/container isolation.
 
-**Required before accepting untrusted code:** move execution to a separate, disposable, resource-limited isolation boundary with no secrets, no network access, restricted filesystem access, and strict CPU/memory/time limits. Until then, restrict proof execution to trusted local development use.
+**Mitigation applied on `feat/chatgpt-backend-security`:** in-process execution has been removed from `server/proofRunner.ts`. PROOF now performs DLP scanning and static transpilation only; it never executes submitted source or test code, and it never reports a test run as passed. Runtime execution remains unavailable until a separate, disposable, resource-limited isolation boundary is implemented and reviewed. This is a fail-closed mitigation, not a completed sandbox.
 
 ## Additional checks required
 
